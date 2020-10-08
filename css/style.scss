@@ -1,0 +1,245 @@
+*{
+box-sizing:border-box;
+padding:0;
+margin:0;
+
+}
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap');
+$primarycolor: #FDFDFD;
+$bodycolor:#E5E5E5;
+$btncolor: #EE2B47;
+$maincolor: #0A263E;
+body{
+font-family:'Montserrat', sans-serif;
+background-color:#FDFFFC;
+height:100vh;
+width:100vw;
+overflow-x:hidden;
+}
+.box{
+ background: #0A263E;
+ position:relative;
+ width:100vw;
+ height:100vh;
+ color:$primarycolor;
+}
+ .headerwave{
+  position: absolute;
+  left:0;
+   bottom:-5px;
+   width:100%;
+    z-index:5;
+     }
+    .navbar{
+     background:$maincolor;
+     width:100%;
+     }
+     #imgs{
+    margin-top:20px;
+    position: absolute;
+    }
+    
+    a{
+    color:$primarycolor;
+    }
+    .nav-link:hover{
+    color:$btncolor;
+    }
+    .navbar-brand:hover{
+    color:$primarycolor;
+    }
+    a.active{
+    color:$btncolor !important; 
+    }
+    .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+    }
+    .navbar-toggler{
+    border-color:$btncolor;
+    }
+    .content h3{
+    font-weight:bold;
+    font-size:3.0rem;
+    line-height:5.375rem;
+    }
+   h2{
+    font-size:3.125;
+     font-weight: 700;
+     }
+    
+.big{
+line-height:1.25rem;
+color:$btncolor;
+}
+.flexs{
+display: flex;
+flex-direction: row;
+justify-content: space-evenly;
+}
+input{
+width:100%;
+height:3.125rem;
+background: #F3F4F2;
+border:none;
+border-radius:10px;
+}
+textarea{
+@extend input;
+height:6.25rem;
+}
+footer{
+ @extend .box;
+}
+.svg2{
+position:absolute;
+top:0;
+left:0;
+z-index:9;
+width:100vw;
+} 
+.info{
+color:$btncolor;
+} 
+.infos{
+color: #0A263E;
+font-weight: bold;
+font-size:1.375rem;
+}
+#btnform{
+background:$btncolor;
+width:12.5rem;
+height:2.6875rem;
+color:$primarycolor;
+border:none;
+}
+#btnsform{
+@extend #btnform;
+border:2px solid $btncolor;
+color:$btncolor;
+background:$primarycolor;
+}
+.signin{
+@extend #btnform;
+width:6.25rem;
+border-radius:5px;
+}
+.support{
+margin-left:280px;
+}
+.footerwave{
+position: absolute;
+left:0;
+top:0;
+width:100%;
+z-index:5;
+}
+#phone-palm{
+animation:phone 1s ease-in-out infinite alternate;
+transform-box:fill-box;
+transform-origin:bottom
+}
+ #g432 path,#g480 path{
+ fill:#141414;
+   }
+#g472{
+animation:right-eye 1s ease-in-out infinite alternate;
+transform-box:fill-box;
+transform-origin:center
+}
+#g468{
+animation:right-brow 1s ease-in-out infinite alternate;
+transform-box:fill-box;
+transform-origin:right
+}
+    
+@keyframes phone{
+0%{
+transform:rotateZ(0deg)
+}
+50%{
+transform:rotateZ(5deg)
+}
+100%{
+transform:rotateZ(0deg)
+}
+}
+            
+@keyframes right-eye{
+0%{
+transform:rotateX(0deg)
+}
+25%{
+transform:rotateX(0deg)
+}
+50%{
+transform:rotateX(80deg)
+}
+75%{
+transform:rotateX(0deg)
+}100%{
+transform:rotateX(0deg)
+}
+}
+@keyframes right-brow{
+0%{
+transform:rotateZ(0deg)
+}
+25%{
+transform:rotateZ(0deg)
+}
+50%{
+transform:rotateZ(-5deg)
+}
+75%{
+transform:rotateZ(0deg)
+}
+100%{
+transform:rotateZ(0deg)
+}
+}
+@media only screen and (max-width:500px){
+html{
+font-size:50%;
+margin:auto ;
+}
+ body{
+ font-size:1.5rem;
+  margin: auto;
+  height:auto;
+ }
+footer{
+height:auto;
+}
+.navbar{
+ position: relative;
+}
+.support{
+margin-left:0.3125rem;
+}
+.signin{
+width:4.375rem;
+
+}
+#whatwedo{
+margin:auto;
+}
+
+}
+@media only screen and (max-width:800px){
+html{
+font-size:60%;
+}
+.support{
+margin-left:0.3125rem;
+}
+.navbar-toggler{
+margin-right:400px;
+}
+}
+
+
+
+
+    
+    
+   

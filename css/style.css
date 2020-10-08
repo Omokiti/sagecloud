@@ -1,0 +1,345 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap");
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  background-color: #FDFFFC;
+  height: 100vh;
+  width: 100vw;
+  overflow-x: hidden;
+}
+
+.box, footer {
+  background: #0A263E;
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  color: #FDFDFD;
+}
+
+.headerwave {
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  width: 100%;
+  z-index: 5;
+}
+
+.navbar {
+  background: #0A263E;
+  width: 100%;
+}
+
+#imgs {
+  margin-top: 20px;
+  position: absolute;
+}
+
+a {
+  color: #FDFDFD;
+}
+
+.nav-link:hover {
+  color: #EE2B47;
+}
+
+.navbar-brand:hover {
+  color: #FDFDFD;
+}
+
+a.active {
+  color: #EE2B47 !important;
+}
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+.navbar-toggler {
+  border-color: #EE2B47;
+}
+
+.content h3 {
+  font-weight: bold;
+  font-size: 3.0rem;
+  line-height: 5.375rem;
+}
+
+h2 {
+  font-size: 3.125;
+  font-weight: 700;
+}
+
+.big {
+  line-height: 1.25rem;
+  color: #EE2B47;
+}
+
+.flexs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+input, textarea {
+  width: 100%;
+  height: 3.125rem;
+  background: #F3F4F2;
+  border: none;
+  border-radius: 10px;
+}
+
+textarea {
+  height: 6.25rem;
+}
+
+.svg2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 9;
+  width: 100vw;
+}
+
+.info {
+  color: #EE2B47;
+}
+
+.infos {
+  color: #0A263E;
+  font-weight: bold;
+  font-size: 1.375rem;
+}
+
+#btnform, #btnsform, .signin {
+  background: #EE2B47;
+  width: 12.5rem;
+  height: 2.6875rem;
+  color: #FDFDFD;
+  border: none;
+}
+
+#btnsform {
+  border: 2px solid #EE2B47;
+  color: #EE2B47;
+  background: #FDFDFD;
+}
+
+.signin {
+  width: 6.25rem;
+  border-radius: 5px;
+}
+
+.support {
+  margin-left: 280px;
+}
+
+.footerwave {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  z-index: 5;
+}
+
+#phone-palm {
+  -webkit-animation: phone 1s ease-in-out infinite alternate;
+          animation: phone 1s ease-in-out infinite alternate;
+  transform-box: fill-box;
+  -webkit-transform-origin: bottom;
+          transform-origin: bottom;
+}
+
+#g432 path, #g480 path {
+  fill: #141414;
+}
+
+#g472 {
+  -webkit-animation: right-eye 1s ease-in-out infinite alternate;
+          animation: right-eye 1s ease-in-out infinite alternate;
+  transform-box: fill-box;
+  -webkit-transform-origin: center;
+          transform-origin: center;
+}
+
+#g468 {
+  -webkit-animation: right-brow 1s ease-in-out infinite alternate;
+          animation: right-brow 1s ease-in-out infinite alternate;
+  transform-box: fill-box;
+  -webkit-transform-origin: right;
+          transform-origin: right;
+}
+
+@-webkit-keyframes phone {
+  0% {
+    -webkit-transform: rotateZ(0deg);
+            transform: rotateZ(0deg);
+  }
+  50% {
+    -webkit-transform: rotateZ(5deg);
+            transform: rotateZ(5deg);
+  }
+  100% {
+    -webkit-transform: rotateZ(0deg);
+            transform: rotateZ(0deg);
+  }
+}
+
+@keyframes phone {
+  0% {
+    -webkit-transform: rotateZ(0deg);
+            transform: rotateZ(0deg);
+  }
+  50% {
+    -webkit-transform: rotateZ(5deg);
+            transform: rotateZ(5deg);
+  }
+  100% {
+    -webkit-transform: rotateZ(0deg);
+            transform: rotateZ(0deg);
+  }
+}
+
+@-webkit-keyframes right-eye {
+  0% {
+    -webkit-transform: rotateX(0deg);
+            transform: rotateX(0deg);
+  }
+  25% {
+    -webkit-transform: rotateX(0deg);
+            transform: rotateX(0deg);
+  }
+  50% {
+    -webkit-transform: rotateX(80deg);
+            transform: rotateX(80deg);
+  }
+  75% {
+    -webkit-transform: rotateX(0deg);
+            transform: rotateX(0deg);
+  }
+  100% {
+    -webkit-transform: rotateX(0deg);
+            transform: rotateX(0deg);
+  }
+}
+
+@keyframes right-eye {
+  0% {
+    -webkit-transform: rotateX(0deg);
+            transform: rotateX(0deg);
+  }
+  25% {
+    -webkit-transform: rotateX(0deg);
+            transform: rotateX(0deg);
+  }
+  50% {
+    -webkit-transform: rotateX(80deg);
+            transform: rotateX(80deg);
+  }
+  75% {
+    -webkit-transform: rotateX(0deg);
+            transform: rotateX(0deg);
+  }
+  100% {
+    -webkit-transform: rotateX(0deg);
+            transform: rotateX(0deg);
+  }
+}
+
+@-webkit-keyframes right-brow {
+  0% {
+    -webkit-transform: rotateZ(0deg);
+            transform: rotateZ(0deg);
+  }
+  25% {
+    -webkit-transform: rotateZ(0deg);
+            transform: rotateZ(0deg);
+  }
+  50% {
+    -webkit-transform: rotateZ(-5deg);
+            transform: rotateZ(-5deg);
+  }
+  75% {
+    -webkit-transform: rotateZ(0deg);
+            transform: rotateZ(0deg);
+  }
+  100% {
+    -webkit-transform: rotateZ(0deg);
+            transform: rotateZ(0deg);
+  }
+}
+
+@keyframes right-brow {
+  0% {
+    -webkit-transform: rotateZ(0deg);
+            transform: rotateZ(0deg);
+  }
+  25% {
+    -webkit-transform: rotateZ(0deg);
+            transform: rotateZ(0deg);
+  }
+  50% {
+    -webkit-transform: rotateZ(-5deg);
+            transform: rotateZ(-5deg);
+  }
+  75% {
+    -webkit-transform: rotateZ(0deg);
+            transform: rotateZ(0deg);
+  }
+  100% {
+    -webkit-transform: rotateZ(0deg);
+            transform: rotateZ(0deg);
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  html {
+    font-size: 50%;
+    margin: auto;
+  }
+  body {
+    font-size: 1.5rem;
+    margin: auto;
+    height: auto;
+  }
+  footer {
+    height: auto;
+  }
+  .navbar {
+    position: relative;
+  }
+  .support {
+    margin-left: 0.3125rem;
+  }
+  .signin {
+    width: 4.375rem;
+  }
+  #whatwedo {
+    margin: auto;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  html {
+    font-size: 60%;
+  }
+  .support {
+    margin-left: 0.3125rem;
+  }
+  .navbar-toggler {
+    margin-right: 400px;
+  }
+}
+/*# sourceMappingURL=style.css.map */
