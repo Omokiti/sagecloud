@@ -324,7 +324,7 @@ textarea {
     margin-left: 0.3125rem;
   }
   .signin {
-    width: 4.375rem;
+    width: 6.25rem;
   }
   #whatwedo {
     margin: auto;
@@ -333,13 +333,13 @@ textarea {
 
 @media only screen and (max-width: 800px) {
   html {
-    font-size: 60%;
+    font-size: 65%;
   }
   .support {
     margin-left: 0.3125rem;
   }
-  .navbar-toggler {
-    margin-right: 400px;
+  .navbar {
+    position: relative;
   }
 }
 /*# sourceMappingURL=style.css.map */
