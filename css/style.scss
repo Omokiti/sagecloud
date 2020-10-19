@@ -1,14 +1,13 @@
 *{
 box-sizing:border-box;
-padding:0;
-margin:0;
+margin:0 !important;
 
 }
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap');
 $primarycolor: #FDFDFD;
 $bodycolor:#E5E5E5;
-$btncolor: #EE2B47;
-$maincolor: #0A263E;
+$btncolor: #FA7A01;
+$maincolor: #011E88;
 body{
 font-family:'Montserrat', sans-serif;
 background-color:#FDFFFC;
@@ -17,7 +16,7 @@ width:100vw;
 overflow-x:hidden;
 }
 .box{
- background: #0A263E;
+ background:$maincolor;
  position:relative;
  width:100vw;
  height:100vh;
@@ -45,28 +44,37 @@ overflow-x:hidden;
     .nav-link:hover{
     color:$btncolor;
     }
+    a:hover{
+    @extend .nav-link;
+    text-decoration:none;
+    }
     .navbar-brand:hover{
     color:$primarycolor;
     }
     a.active{
     color:$btncolor !important; 
     }
+    
     .navbar-toggler-icon {
     background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
     }
     .navbar-toggler{
     border-color:$btncolor;
     }
-    .content h3{
-    font-weight:bold;
-    font-size:3.0rem;
-    line-height:5.375rem;
-    }
+    
    h2{
     font-size:3.125;
      font-weight: 700;
      }
-    
+  .content h3{
+  display:inline;
+  font-weight:bold;
+  font-size:40px;
+  }
+  #link{
+  font-weight:bold;
+  font-size:30px;
+  }
 .big{
 line-height:1.25rem;
 color:$btncolor;
@@ -88,7 +96,9 @@ textarea{
 height:6.25rem;
 }
 footer{
- @extend .box;
+background:$maincolor;
+position: relative;
+color:$primarycolor;
 }
 .svg2{
 position:absolute;
@@ -97,9 +107,22 @@ left:0;
 z-index:9;
 width:100vw;
 } 
+#bolder,h1{
+color:$maincolor;
+font-weight: bolder;
+}
+#bold{
+color:$maincolor;
+}
+
 .info{
 color:$btncolor;
 } 
+.whatwedo h3{
+color: #0A263E;
+font-weight: bold;
+font-size:1.375rem;
+}
 .infos{
 color: #0A263E;
 font-weight: bold;
@@ -112,6 +135,16 @@ height:2.6875rem;
 color:$primarycolor;
 border:none;
 }
+.flexer{
+display:flex;
+}
+
+.flexer img {
+  align-self:start ;
+  flex-grow:0;
+  flex-shrink:0;
+ }
+
 #btnsform{
 @extend #btnform;
 border:2px solid $btncolor;
@@ -124,7 +157,7 @@ width:6.25rem;
 border-radius:5px;
 }
 .support{
-margin-left:280px;
+  margin-left:13.75rem !important;
 }
 .footerwave{
 position: absolute;
@@ -212,12 +245,13 @@ height:auto;
 }
 .navbar{
  position: relative;
+ padding:0;
 }
 .navbar-toggler{
 border:none;
 }
-.support{
-margin-left:0.3125rem;
+#support{
+margin-left:230px;
 }
 .signin{
 width:6.25rem;
@@ -235,6 +269,7 @@ font-size:50%;
 
  .navbar{
  position: relative;
+ 
 }
 .navbar-toggler{
 border:none;

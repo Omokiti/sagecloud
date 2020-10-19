@@ -2,8 +2,7 @@
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  padding: 0;
-  margin: 0;
+  margin: 0 !important;
 }
 
 body {
@@ -14,8 +13,8 @@ body {
   overflow-x: hidden;
 }
 
-.box, footer {
-  background: #0A263E;
+.box {
+  background: #011E88;
   position: relative;
   width: 100vw;
   height: 100vh;
@@ -31,7 +30,7 @@ body {
 }
 
 .navbar {
-  background: #0A263E;
+  background: #011E88;
   width: 100%;
 }
 
@@ -44,8 +43,12 @@ a {
   color: #FDFDFD;
 }
 
-.nav-link:hover {
-  color: #EE2B47;
+.nav-link:hover, a:hover {
+  color: #FA7A01;
+}
+
+a:hover {
+  text-decoration: none;
 }
 
 .navbar-brand:hover {
@@ -53,7 +56,7 @@ a {
 }
 
 a.active {
-  color: #EE2B47 !important;
+  color: #FA7A01 !important;
 }
 
 .navbar-toggler-icon {
@@ -61,13 +64,7 @@ a.active {
 }
 
 .navbar-toggler {
-  border-color: #EE2B47;
-}
-
-.content h3 {
-  font-weight: bold;
-  font-size: 3.0rem;
-  line-height: 5.375rem;
+  border-color: #FA7A01;
 }
 
 h2 {
@@ -75,9 +72,20 @@ h2 {
   font-weight: 700;
 }
 
+.content h3 {
+  display: inline;
+  font-weight: bold;
+  font-size: 40px;
+}
+
+#link {
+  font-weight: bold;
+  font-size: 30px;
+}
+
 .big {
   line-height: 1.25rem;
-  color: #EE2B47;
+  color: #FA7A01;
 }
 
 .flexs {
@@ -105,6 +113,12 @@ textarea {
   height: 6.25rem;
 }
 
+footer {
+  background: #011E88;
+  position: relative;
+  color: #FDFDFD;
+}
+
 .svg2 {
   position: absolute;
   top: 0;
@@ -113,8 +127,23 @@ textarea {
   width: 100vw;
 }
 
+#bolder, h1 {
+  color: #011E88;
+  font-weight: bolder;
+}
+
+#bold {
+  color: #011E88;
+}
+
 .info {
-  color: #EE2B47;
+  color: #FA7A01;
+}
+
+.whatwedo h3 {
+  color: #0A263E;
+  font-weight: bold;
+  font-size: 1.375rem;
 }
 
 .infos {
@@ -124,16 +153,33 @@ textarea {
 }
 
 #btnform, #btnsform, .signin {
-  background: #EE2B47;
+  background: #FA7A01;
   width: 12.5rem;
   height: 2.6875rem;
   color: #FDFDFD;
   border: none;
 }
 
+.flexer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.flexer img {
+  -ms-flex-item-align: start;
+      -ms-grid-row-align: start;
+      align-self: start;
+  -webkit-box-flex: 0;
+      -ms-flex-positive: 0;
+          flex-grow: 0;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+}
+
 #btnsform {
-  border: 2px solid #EE2B47;
-  color: #EE2B47;
+  border: 2px solid #FA7A01;
+  color: #FA7A01;
   background: #FDFDFD;
 }
 
@@ -143,7 +189,7 @@ textarea {
 }
 
 .support {
-  margin-left: 280px;
+  margin-left: 13.75rem !important;
 }
 
 .footerwave {
@@ -319,12 +365,13 @@ textarea {
   }
   .navbar {
     position: relative;
+    padding: 0;
   }
   .navbar-toggler {
     border: none;
   }
-  .support {
-    margin-left: 0.3125rem;
+  #support {
+    margin-left: 230px;
   }
   .signin {
     width: 6.25rem;
